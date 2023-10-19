@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bg-primary {
+    background-color: #0056B8 !important;
+}
+
+.header-banner {
+    position: relative;
+    background: url('https://via.placeholder.com/2200x400') center center no-repeat;
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    z-index: 100;
+    /* para garantir que o título fique acima da imagem */
+    text-align: center;
+    max-width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Para dar um fundo semi-transparente ao título e melhorar a legibilidade */
+    padding: 10px;
+    /* Um pouco de espaçamento em torno do texto */
+}
+
+.container.my-4 {
+    /* display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    /* min-height: 60vh; /* Define uma altura mínima para a seção */
+}
+
+.video-container {
+    max-width: 700px;
+    /* ajuste para o tamanho que deseja como máximo */
+    width: 100%;
+    margin: 0 auto;
+    /* isso irá centralizar o vídeo na página */
+}
+
+.embed-responsive-16by9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* manter a proporção de 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-responsive-16by9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* ajustar o width do iframe para 100% do container */
+    height: 100%;
+    /* ajustar o height do iframe para 100% do container */
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Espaçamento abaixo do título */
+    font-weight: bold;
+    color: #0056B8;
+    /* Adotando a cor do seu navbar */
+}
+
+.my-4.uniform-spacing {
+    /*   margin-top: 0 !important;  */
+    margin-bottom: 50px !important;
+    /* ajuste conforme o seu desejo */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    flex-wrap: wrap;
+    /* Permite que os itens se envolvam para a próxima linha quando o espaço é insuficiente */
+}
+
+.custom-btn {
+    margin: 5px;
+    /* Isso dá um pouco de espaço entre os botões */
+}
+
+/* Para a responsividade - quando a largura da tela é pequena, os botões ficarão um abaixo do outro */
+@media (max-width: 576px) {
+    .buttons-container {
+        flex-direction: column;
+        /* Coloca os itens em uma única coluna */
+        align-items: center;
+        /* Centraliza horizontalmente quando em uma coluna */
+    }
+
+    .custom-btn {
+        margin-bottom: 10px;
+        /* Um pouco mais de espaço entre os botões quando estão um abaixo do outro */
+    }
+}
+
+/* Centralização do título */
+.accordion-body h3 {
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona uma margem entre o título e os botões para separá-los visualmente */
+}

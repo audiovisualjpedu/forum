@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Página</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu 2</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header com Banner -->
+    <header class="header-banner uniform-spacing">
+        <h1 class="banner-title">FÓRUM MUNICIPAL DE EDUCAÇÃO DE JOÃO PESSOA</h1>
+    </header>
+
+    <!-- Seção de Vídeo -->
+    <section class="container my-4 video-container uniform-spacing">
+        <h2 class="section-title">TRANSMISSÃO DO FÓRUM MUNICIPAL</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3Dp0E98mtio"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Seção de Grupos Recolhíveis -->
+    <section class="container my-4 uniform-spacing">
+        <h2 class="section-title">SALAS TEMÁTICAS</h2>
+        <div class="accordion" id="customAccordion">
+
+            <!-- Grupo 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Título do Grupo 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                        <p><strong>Eixo I</strong> - Descrição</p>
+                        <p><strong>Expositor:</strong> Nome dos expositores</p>
+                        <p><strong>Mediador:</strong> Nome dos mediadores</p>
+                        <p><strong>Relator:</strong> Nome dos relatores</p>
+
+                        <hr> <!-- Divisória -->
+
+                        <h3>Salas Temáticas</h3> <!-- Título acima dos botões -->
+
+                        <div class="buttons-container">
+                            <a href="#linkDaSala1" class="btn btn-primary custom-btn">Sala 1</a>
+                            <a href="#linkDaSala2" class="btn btn-primary custom-btn">Sala 2</a>
+                            <a href="#linkDaSala3" class="btn btn-primary custom-btn">Sala 3</a>
+                            <a href="#linkDaSala4" class="btn btn-primary custom-btn">Sala 4</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grupo 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Título do Grupo 2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                    <div class="accordion-body">
+                        Conteúdo do Grupo 2.
+                    </div>
+                </div>
+            </div>
+
+            <!-- ... Continue o padrão acima para os demais grupos (até Grupo 7) ... -->
+
+            <!-- Grupo 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Título do Grupo 3.
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                        Conteúdo do Grupo 3.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grupo 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Título do Grupo 4
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                    <div class="accordion-body">
+                        Conteúdo do Grupo 4.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grupo 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Título do Grupo 5
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                    <div class="accordion-body">
+                        Conteúdo do Grupo 5.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grupo 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Título do Grupo 6
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
+                    <div class="accordion-body">
+                        Conteúdo do Grupo 6.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grupo 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Título do Grupo 7
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
+                    <div class="accordion-body">
+                        Conteúdo do Grupo 7.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-primary text-white">
+        <div class="container">
+            <p class="text-center py-3 mb-0">Todos os direitos reservados - 2023</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
