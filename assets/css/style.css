@@ -7,19 +7,59 @@
 
 body {
     font-family: Arial, sans-serif;
+    padding-top: 80px; /* Ajuste este valor conforme necessário. A altura padrão de um navbar é de cerca de 56px, mas pode variar com base no seu conteúdo. */
 }
 
 .bg-primary {
-    background-color: #0056B8 !important;
+    /* background-color: #174ea1 !important; */
+    background-color: #ffffff !important;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-link {
+    color: #174ea1 !important;
+
+}
+
+.nav-link:hover {
+    color: #18191b !important;
 }
 
 .header-banner {
     position: relative;
-    background: url('https://via.placeholder.com/2200x400') center center no-repeat;
+    background: url('../img/bg-lg-lg.png') center center no-repeat;
     background-size: cover;
-    height: 400px;
+    min-height: 400px;
     overflow: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    margin-top: -14px;
+}
+
+/* Para tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .header-banner {
+        background-image: url('../img/bg-lg.png');
+        min-height: 400px;
+    }
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 767px) and (min-width: 512px) {
+    .header-banner {
+        background-image: url('../img/bg-md.png');
+        min-height: 200px;
+    }
+}
+
+/* Para dispositivos móveis menores */
+@media (max-width: 512px) {
+    .header-banner {
+        background-image: url('../img/bg-sm.png');
+        min-height: 150px;
+    }
 }
 
 .banner-title {
@@ -78,7 +118,7 @@ body {
     margin-bottom: 20px;
     /* Espaçamento abaixo do título */
     font-weight: bold;
-    color: #0056B8;
+    color: #000000;
     /* Adotando a cor do seu navbar */
 }
 
@@ -119,5 +159,73 @@ body {
 /* Centralização do título */
 .accordion-body h3 {
     text-align: center;
-    margin-bottom: 20px; /* Adiciona uma margem entre o título e os botões para separá-los visualmente */
+    margin-bottom: 20px;
+    /* Adiciona uma margem entre o título e os botões para separá-los visualmente */
+}
+
+/* Ícone inicial e quando o conteúdo está colapsado (fechado) */
+.accordion-button::after {
+    transform: rotate(180deg);
+    /* Aponta para baixo */
+}
+
+/* Quando o conteúdo está expandido (aberto) */
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(-0deg);
+    /* Aponta para cima */
+}
+
+.footer {
+    padding: 5px;
+}
+
+.bg-secondary {
+    /* background-color: #174ea1 !important; */
+    background-color: #174ea1 !important;
+}
+
+
+/* Estilos padrão para telas maiores */
+.footer-logo-left {
+    order: 1;
+    /* Primeiro elemento */
+    height: 45px;
+}
+
+.footer p {
+    order: 2;
+    /* Segundo elemento */
+}
+
+.footer-logo-right {
+    order: 3;
+    /* Terceiro elemento */
+    height: 45px;
+}
+
+/* Para a responsividade - quando a largura da tela é pequena */
+@media (max-width: 576px) {
+    .footer-logo-left {
+        order: 1;
+        /* Segundo elemento em telas pequenas */
+        padding: 5px;
+    }
+
+    .footer-logo-right {
+        order: 2;
+        /* Primeiro elemento em telas pequenas */
+        padding: 5px;
+    }
+
+    .footer p {
+        order: 3;
+        /* Terceiro elemento em telas pequenas */
+    }
+}
+
+.heart {
+    color: white;
+    /* Se desejar ajustar o tamanho do coração, descomente a linha abaixo e ajuste o valor conforme necessário */
+    font-size: 1.2em;
+    */
 }

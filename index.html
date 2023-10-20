@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo de Página</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -12,9 +13,9 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
         <div class="container">
-            <a class="navbar-brand" href="#">Logo</a>
+            <img class="logo" src="./assets/img/logo.png">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,10 +23,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menu 1</a>
+                        <a class="nav-link" href="#transmissao">Transmissão</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menu 2</a>
+                        <a class="nav-link" href="#salas-tematicas">Salas Temáticas</a>
                     </li>
                 </ul>
             </div>
@@ -34,11 +35,19 @@
 
     <!-- Header com Banner -->
     <header class="header-banner uniform-spacing">
-        <h1 class="banner-title">FÓRUM MUNICIPAL DE EDUCAÇÃO DE JOÃO PESSOA</h1>
+        <!-- <h1 class="banner-title">FÓRUM MUNICIPAL DE EDUCAÇÃO DE JOÃO PESSOA 2023</h1> -->
     </header>
 
+    <!-- Seção da Grade de Programação -->
+    <section class="container uniform-spacing">
+        <div class="text-center py-4">
+            <h2 class="section-title">FÓRUM MUNICIPAL DE EDUCAÇÃO DE JOÃO PESSOA 2023</h2>
+            <h4 class="lead">Programação</h4>
+        </div>
+    </section>
+
     <!-- Seção de Vídeo -->
-    <section class="container my-4 video-container uniform-spacing">
+    <section class="container my-4 video-container uniform-spacing" id="transmissao">
         <h2 class="section-title">TRANSMISSÃO DO FÓRUM MUNICIPAL</h2>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3Dp0E98mtio"
@@ -46,10 +55,8 @@
         </div>
     </section>
 
-    </section>
-
     <!-- Seção de Grupos Recolhíveis -->
-    <section class="container my-4 uniform-spacing">
+    <section class="container my-4 uniform-spacing" id="salas-tematicas">
         <h2 class="section-title">SALAS TEMÁTICAS</h2>
         <div class="accordion" id="customAccordion">
 
@@ -58,15 +65,18 @@
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Título do Grupo 1
+                        <h5><strong>EIXO I</strong></h5>
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
                     <div class="accordion-body">
-                        <p><strong>Eixo I</strong> - Descrição</p>
-                        <p><strong>Expositor:</strong> Nome dos expositores</p>
-                        <p><strong>Mediador:</strong> Nome dos mediadores</p>
-                        <p><strong>Relator:</strong> Nome dos relatores</p>
+                        <p>O PNE como articulador do SNE, sua vinculação aos planos decenais,
+                            estaduais, distritais e municipais de educação, em prol das ações integradas e
+                            intersetoriais, em regime de colaboração Inter federativa;</p>
+                        <p><strong>Expositor:</strong> Prof. Dr Arlindo Queiroz (UFPE) e Profa. Me. Luciana Walter
+                            (SINTEP)</p>
+                        <p><strong>Mediadora:</strong> Profa. Esp. Maria do Socorro Arruda Diniz Pires - (SEDEC/EJA)</p>
+                        <p><strong>Relator:</strong> Douglas William Quirino Pereira - (SEDEC)</p>
 
                         <hr> <!-- Divisória -->
 
@@ -74,9 +84,6 @@
 
                         <div class="buttons-container">
                             <a href="#linkDaSala1" class="btn btn-primary custom-btn">Sala 1</a>
-                            <a href="#linkDaSala2" class="btn btn-primary custom-btn">Sala 2</a>
-                            <a href="#linkDaSala3" class="btn btn-primary custom-btn">Sala 3</a>
-                            <a href="#linkDaSala4" class="btn btn-primary custom-btn">Sala 4</a>
                         </div>
 
 
@@ -89,12 +96,29 @@
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Título do Grupo 2
+                        <h5><strong>EIXO II</strong></h5>
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
                     <div class="accordion-body">
-                        Conteúdo do Grupo 2.
+                        <p>A garantia do direito de todas as pessoas à educação de qualidade
+                            social, com acesso, permanência e conclusão, em todos os níveis, etapas e modalidades, nos
+                            diferentes contextos e terrritórios;</p>
+                        <p><strong>Expositores:</strong> Andressa Pellanda (Campanha Nacional pelo Direito a Educação) e
+                            Profa Me. Maria de Fátima Pereira (FÓRUM-EJA/JP)</p>
+                        <p><strong>Mediador:</strong> Eliene Dias - (Comitê Paraibano da Camapnha Nacional pelo Direito
+                            da Educação)</p>
+                        <p><strong>Relator:</strong> Andressa - (SEDEC/EJA)</p>
+
+                        <hr> <!-- Divisória -->
+
+                        <h3>Salas Temáticas</h3> <!-- Título acima dos botões -->
+
+                        <div class="buttons-container">
+                            <a href="#linkDaSala1" class="btn btn-primary custom-btn">Sala 1</a>
+                            <a href="#linkDaSala2" class="btn btn-primary custom-btn">Sala 2</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -106,12 +130,30 @@
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Título do Grupo 3.
+                        <h5><strong>EIXO III</strong></h5>
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
                     <div class="accordion-body">
-                        Conteúdo do Grupo 3.
+                        <p>Educação, Direitos Humanos, Inclusão e Diversidade: equidade e
+                            justiça social na garantia do Direito à Educação para todos e combate ás diferentes e novas
+                            formas de desigualdade, discriminação e violência;</p>
+                        <p><strong>Expositores:</strong> Psi. Dra. Socorro Pimentel (SEDEC), Profa. Ms. Mara Oliveira
+                            (EJA/SEDEC) e Prof. Cleber Ferreira - (MEL)</p>
+                        <p><strong>Mediador:</strong> Lucian Souza da Silva - (SEDEC)</p>
+                        <p><strong>Relator:</strong> Prof.</p>
+
+                        <hr> <!-- Divisória -->
+
+                        <h3>Salas Temáticas</h3> <!-- Título acima dos botões -->
+
+                        <div class="buttons-container">
+                            <a href="#linkDaSala1" class="btn btn-primary custom-btn">Sala 1</a>
+                            <a href="#linkDaSala2" class="btn btn-primary custom-btn">Sala 2</a>
+                            <a href="#linkDaSala3" class="btn btn-primary custom-btn">Sala 3</a>
+                            <a href="#linkDaSala4" class="btn btn-primary custom-btn">Sala 4</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -121,12 +163,27 @@
                 <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Título do Grupo 4
+                        <h5><strong>EIXO IV</strong></h5>
                     </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
                     <div class="accordion-body">
-                        Conteúdo do Grupo 4.
+                        <p>Gestão Democrática e educação de qualidade: regulamentação,
+                            monitoramento, avaliação, órgãos e mecanismos de controle e participação social nos
+                            processos e espaços de decisão;</p>
+                        <p><strong>Expositores:</strong> Profa. Dra. Angeli de Alcântara (UFPB) e Psi. Ms. Laurineide
+                            Lauriano - (SEDEC)</p>
+                        <p><strong>Mediador:</strong> Profa. Dra. Maria Helena Maciel - (UFPB)</p>
+                        <p><strong>Relator:</strong> Prof. Dr. Fábio fonseca - (UFPB)</p>
+
+                        <hr> <!-- Divisória -->
+
+                        <h3>Salas Temáticas</h3> <!-- Título acima dos botões -->
+
+                        <div class="buttons-container">
+                            <a href="#linkDaSala1" class="btn btn-primary custom-btn">Sala 1</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -136,12 +193,30 @@
                 <h2 class="accordion-header" id="headingFive">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        Título do Grupo 5
+                        <h5><strong>EIXO V</strong></h5>
                     </button>
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
                     <div class="accordion-body">
-                        Conteúdo do Grupo 5.
+                        <p>Valorização de profissionais da educação: garantia do direito à formação inicial e continuada
+                            de qualidade, ao piso salarial e carreira, e às condições para o exercício da profissão e
+                            saúde;</p>
+                        <p><strong>Expositores:</strong> Prof. Antônio Arruda (SINTEP) e Profa. Dra. Raquel Sabino -
+                            (SINTEP JP)</p>
+                        <p><strong>Mediador:</strong> Profa. e Psi. Leônia Gomes - (SINTEP)</p>
+                        <p><strong>Relator:</strong> Profa. Vânia Mendes (SINTEP)</p>
+
+                        <hr> <!-- Divisória -->
+
+                        <h3>Salas Temáticas</h3> <!-- Título acima dos botões -->
+
+                        <div class="buttons-container">
+                            <a href="#linkDaSala1" class="btn btn-primary custom-btn">Sala 1</a>
+                            <a href="#linkDaSala2" class="btn btn-primary custom-btn">Sala 2</a>
+                            <a href="#linkDaSala3" class="btn btn-primary custom-btn">Sala 3</a>
+                            <a href="#linkDaSala3" class="btn btn-primary custom-btn">Sala 4</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -151,12 +226,26 @@
                 <h2 class="accordion-header" id="headingSix">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        Título do Grupo 6
+                        <h5><strong>EIXO VI</strong></h5>
                     </button>
                 </h2>
                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
                     <div class="accordion-body">
-                        Conteúdo do Grupo 6.
+                        <p>Financiamento público da educação pública, com controle social e garantia das condições
+                            adequadas para a qualidade social da educação, visando à democratização do acesso e da
+                            permanência;</p>
+                        <p><strong>Expositores:</strong> Prof. Ms Daniel de Assis (SINTEP JP)</p>
+                        <p><strong>Mediador:</strong> Profa. Maria da Penha Araújo - (SINTEP)</p>
+                        <p><strong>Relator:</strong> Fernando Generino (SINTEP JP)</p>
+
+                        <hr> <!-- Divisória -->
+
+                        <h3>Salas Temáticas</h3> <!-- Título acima dos botões -->
+
+                        <div class="buttons-container">
+                            <a href="#linkDaSala1" class="btn btn-primary custom-btn">Sala 1</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -166,12 +255,27 @@
                 <h2 class="accordion-header" id="headingSeven">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        Título do Grupo 7
+                        <h5><strong>EIXO VII</strong></h5>
                     </button>
                 </h2>
                 <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
                     <div class="accordion-body">
-                        Conteúdo do Grupo 7.
+                        <p>Educação comprometida com a justiça social, a proteção da biodiversidade, o desenvolvimento
+                            socioambiental sustentável para a garantia da vida com qualidade no planeta e o
+                            enfrentamento das desigualdades e da pobreza.</p>
+                        <p><strong>Expositores:</strong> Prof. Dr. Fernando Cunha 9ADUF) e Prof. Dr. Eder Dantas: (UFPB)
+                        </p>
+                        <p><strong>Mediador:</strong> Expedito Luiz Carvalho dos Santos - (SEDEC)</p>
+                        <p><strong>Relator:</strong> Marcos Quintanilha (UFPB)</p>
+
+                        <hr> <!-- Divisória -->
+
+                        <h3>Salas Temáticas</h3> <!-- Título acima dos botões -->
+
+                        <div class="buttons-container">
+                            <a href="#linkDaSala1" class="btn btn-primary custom-btn">Sala 1</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -180,11 +284,17 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-primary text-white">
-        <div class="container">
-            <p class="text-center py-3 mb-0">Todos os direitos reservados - 2023</p>
+    <footer class="footer bg-secondary text-white">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <img src="./assets/img/pmjp-logo-branco.svg" alt="Logo Esquerdo" class="pmjp footer-logo footer-logo-left">
+            <p class="text-center my-3">
+                Feito com <span class="heart">❤</span> por servidores públicos
+            </p>
+
+            <img src="./assets/img/conae-logo.svg" alt="Logo Direito" class="footer-logo footer-logo-right">
         </div>
     </footer>
+
 
     <!-- Bootstrap JS e Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
