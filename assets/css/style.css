@@ -8,11 +8,9 @@
 body {
     font-family: Arial, sans-serif;
     padding-top: 80px;
-    /* Ajuste este valor conforme necessário. A altura padrão de um navbar é de cerca de 56px, mas pode variar com base no seu conteúdo. */
 }
 
 .bg-primary {
-    /* background-color: #174ea1 !important; */
     background-color: #ffffff !important;
 }
 
@@ -39,7 +37,6 @@ body {
     margin-top: -14px;
 }
 
-/* Para tablets */
 @media (max-width: 1024px) and (min-width: 768px) {
     .header-banner {
         background-image: url('../img/bg-lg.png');
@@ -47,7 +44,6 @@ body {
     }
 }
 
-/* Para dispositivos móveis */
 @media (max-width: 767px) and (min-width: 512px) {
     .header-banner {
         background-image: url('../img/bg-md.png');
@@ -55,7 +51,6 @@ body {
     }
 }
 
-/* Para dispositivos móveis menores */
 @media (max-width: 512px) {
     .header-banner {
         background-image: url('../img/bg-sm.png');
@@ -71,24 +66,17 @@ body {
     color: white;
     font-size: 1.5rem;
     z-index: 100;
-    /* para garantir que o título fique acima da imagem */
     text-align: center;
     max-width: 80%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Para dar um fundo semi-transparente ao título e melhorar a legibilidade */
     padding: 10px;
-    /* Um pouco de espaçamento em torno do texto */
 }
 
 .container.my-4 {
-    /* display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center;
     align-items: center;
-    /* Centraliza verticalmente */
-    /* min-height: 60vh; /* Define uma altura mínima para a seção */
 }
 
-/* tabela de horários */
 table {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -134,16 +122,13 @@ table tr:hover {
 
 .video-container {
     max-width: 700px;
-    /* ajuste para o tamanho que deseja como máximo */
     width: 100%;
     margin: 0 auto;
-    /* isso irá centralizar o vídeo na página */
 }
 
 .embed-responsive-16by9 {
     position: relative;
     padding-bottom: 56.25%;
-    /* manter a proporção de 16:9 */
     height: 0;
     overflow: hidden;
 }
@@ -153,71 +138,52 @@ table tr:hover {
     top: 0;
     left: 0;
     width: 100%;
-    /* ajustar o width do iframe para 100% do container */
     height: 100%;
-    /* ajustar o height do iframe para 100% do container */
 }
 
 .section-title {
     text-align: center;
     margin-bottom: 20px;
-    /* Espaçamento abaixo do título */
     font-weight: bold;
     color: #000000;
-    /* Adotando a cor do seu navbar */
 }
 
 .my-4.uniform-spacing {
-    /*   margin-top: 0 !important;  */
     margin-bottom: 50px !important;
-    /* ajuste conforme o seu desejo */
 }
 
 .buttons-container {
     display: flex;
     justify-content: center;
-    /* Centraliza horizontalmente */
     flex-wrap: wrap;
-    /* Permite que os itens se envolvam para a próxima linha quando o espaço é insuficiente */
 }
 
 .custom-btn {
     margin: 5px;
-    /* Isso dá um pouco de espaço entre os botões */
 }
 
-/* Para a responsividade - quando a largura da tela é pequena, os botões ficarão um abaixo do outro */
 @media (max-width: 390px) {
     .buttons-container {
         flex-direction: column;
-        /* Coloca os itens em uma única coluna */
         align-items: center;
-        /* Centraliza horizontalmente quando em uma coluna */
     }
 
     .custom-btn {
         margin-bottom: 10px;
-        /* Um pouco mais de espaço entre os botões quando estão um abaixo do outro */
     }
 }
 
-/* Centralização do título */
 .accordion-body h3 {
     text-align: center;
     margin-bottom: 20px;
-    /* Adiciona uma margem entre o título e os botões para separá-los visualmente */
 }
 
-/* Ícone inicial e quando o conteúdo está colapsado (fechado) */
 .accordion-button::after {
     transform: rotate(180deg);
-    /* Aponta para baixo */
 }
 
-/* Quando o conteúdo está expandido (aberto) */
 .accordion-button:not(.collapsed)::after {
     transform: rotate(-0deg);
-    /* Aponta para cima */
 }
 
 .footer {
@@ -232,13 +198,9 @@ table tr:hover {
 .footer-logo-left,
 .footer-logo-right {
     max-height: 70px;
-    /* Defina a altura máxima para as imagens */
     width: 180px;
-    /* Garanta que a largura seja proporcional */
     display: block;
-    /* Faz a imagem se comportar como um bloco */
     margin: auto;
-    /* Centraliza a imagem dentro da div */
     padding: 5px;
 }
 
@@ -247,7 +209,6 @@ table tr:hover {
     margin-bottom: 10px;
 }
 
-/* Para a responsividade - quando a largura da tela é pequena */
 @media (max-width: 480px) {
 
     .footer-logo-left,
@@ -260,9 +221,4 @@ table tr:hover {
         order: 2;
         padding: 5px 0;
     }
-}
-
-.heart {
-    color: white !important;
-    font-size: 1.2em;
 }
