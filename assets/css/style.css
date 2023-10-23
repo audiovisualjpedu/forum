@@ -177,55 +177,37 @@ body {
 
 .footer {
     padding: 5px;
+    /* max-height: 100px; (Comentado para permitir que o footer se expanda conforme necessário) */
+    overflow: visible; /* Vamos alterar isso para 'visible' */
 }
 
 .bg-secondary {
-    /* background-color: #174ea1 !important; */
     background-color: #174ea1 !important;
 }
 
-
-/* Estilos padrão para telas maiores */
-.footer-logo-left {
-    order: 1;
-    /* Primeiro elemento */
-    height: 45px;
-}
-
+.footer-logo-left,
+.footer-logo-right,
 .footer p {
-    order: 2;
-    /* Segundo elemento */
-}
-
-.footer-logo-right {
-    order: 3;
-    /* Terceiro elemento */
-    height: 45px;
+    height: auto; /* Ajuste a altura para 'auto' para permitir que o conteúdo defina a altura */
+    max-height: none; /* Remova a altura máxima */
 }
 
 /* Para a responsividade - quando a largura da tela é pequena */
 @media (max-width: 576px) {
-    .footer-logo-left {
-        order: 1;
-        /* Segundo elemento em telas pequenas */
-        padding: 5px;
-    }
-
+    .footer-logo-left,
     .footer-logo-right {
-        order: 2;
-        /* Primeiro elemento em telas pequenas */
-        padding: 5px;
+        order: 1;
+        padding: 5px 0;
     }
 
     .footer p {
-        order: 3;
-        /* Terceiro elemento em telas pequenas */
+        order: 2;
+        padding: 5px 0;
+        margin-bottom: 10px; /* Um pouco de espaço adicional abaixo do texto */
     }
 }
 
 .heart {
     color: white;
-    /* Se desejar ajustar o tamanho do coração, descomente a linha abaixo e ajuste o valor conforme necessário */
     font-size: 1.2em;
-    */
 }
