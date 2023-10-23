@@ -126,7 +126,8 @@ table tr:hover {
 
 }
 
-.bold-time, .time-period {
+.bold-time,
+.time-period {
     font-weight: bold !important;
 }
 
@@ -230,14 +231,15 @@ table tr:hover {
 
 .footer-logo-left,
 .footer-logo-right {
-    max-height: 60px;
+    max-height: 70px;
     /* Defina a altura máxima para as imagens */
-    width: auto;
+    width: 180px;
     /* Garanta que a largura seja proporcional */
     display: block;
     /* Faz a imagem se comportar como um bloco */
     margin: auto;
     /* Centraliza a imagem dentro da div */
+    padding: 5px;
 }
 
 .footer p {
