@@ -266,3 +266,26 @@ table tr:hover {
     color: white;
     font-size: 1.2em;
 }
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated-heart:hover {
+    animation: heartBeat 0.5s infinite !important;
+}
+
