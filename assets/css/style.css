@@ -142,7 +142,7 @@ body {
 }
 
 /* Para a responsividade - quando a largura da tela é pequena, os botões ficarão um abaixo do outro */
-@media (max-width: 576px) {
+@media (max-width: 390px) {
     .buttons-container {
         flex-direction: column;
         /* Coloca os itens em uma única coluna */
