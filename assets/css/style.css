@@ -134,6 +134,15 @@ table tr:hover {
     font-weight: bold !important;
 }
 
+.regimento {
+    text-decoration: none;
+    transition: .3s;
+}
+
+.regimento:hover {
+    text-decoration: none;
+    color: #000000;
+}
 
 .video-container {
     max-width: 700px;
